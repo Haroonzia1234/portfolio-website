@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio website for Alex Carter, front-end developer." />
+  <title>Alex Carter | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#home">Alex Carter</a>
+      <button id="menuBtn" class="menu-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container section">
+      <div>
+        <p class="eyebrow">Front-End Developer</p>
+        <h1>I build fast, accessible, and beautiful web experiences.</h1>
+        <p class="hero-text">
+          I’m Alex Carter, a developer focused on creating responsive products with strong UX,
+          clean code, and modern web technologies.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View My Work</a>
+          <a class="btn ghost" href="#contact">Hire Me</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Quick profile">
+        <h2>Quick Facts</h2>
+        <ul>
+          <li>📍 Based in Bangalore, India</li>
+          <li>💼 4+ years in web development</li>
+          <li>⚙️ React, TypeScript, Node.js</li>
+          <li>🚀 Open to freelance + full-time roles</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About Me</h2>
+      <p>
+        I enjoy turning complex business requirements into intuitive user interfaces. My work blends
+        performance optimization, accessibility best practices, and component-driven development.
+        I’ve delivered dashboards, e-commerce features, and marketing websites used by thousands of users.
+      </p>
+    </section>
+
+    <section id="skills" class="container section">
+      <h2>Skills</h2>
+      <div class="chip-grid">
+        <span>HTML5</span><span>CSS3 / Sass</span><span>JavaScript</span><span>TypeScript</span>
+        <span>React</span><span>Next.js</span><span>Node.js</span><span>REST APIs</span>
+        <span>Git & GitHub</span><span>Testing Library</span><span>Figma</span><span>Accessibility (WCAG)</span>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <article class="card">
+          <h3>ShopFlow E-commerce</h3>
+          <p>
+            Built a high-performance product listing and checkout flow with React + Redux, reducing
+            cart abandonment by 18%.
+          </p>
+          <p class="meta">Tech: React, TypeScript, Stripe API</p>
+        </article>
+        <article class="card">
+          <h3>Insight Analytics Dashboard</h3>
+          <p>
+            Designed reusable chart and table components for internal BI tools, improving reporting
+            speed for operations teams.
+          </p>
+          <p class="meta">Tech: Next.js, D3, Tailwind CSS</p>
+        </article>
+        <article class="card">
+          <h3>FinTrack Mobile Web</h3>
+          <p>
+            Led front-end development for a budgeting app’s mobile web experience with focus on
+            accessibility and offline support.
+          </p>
+          <p class="meta">Tech: PWA, IndexedDB, Node.js</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="container section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article>
+          <h3>Senior Front-End Developer · BrightLabs</h3>
+          <p class="meta">2022 — Present</p>
+          <p>Own architecture for reusable component libraries and mentor junior developers.</p>
+        </article>
+        <article>
+          <h3>UI Developer · PixelForge Studio</h3>
+          <p class="meta">2020 — 2022</p>
+          <p>Built landing pages and SaaS dashboards with a strong focus on performance budgets.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <p>If you want to collaborate, feel free to send a message.</p>
+      <form class="contact-form" action="#" method="post">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Alex Carter</p>
+      <p>
+        <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a> ·
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
