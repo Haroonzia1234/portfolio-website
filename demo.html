@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Website</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#0b1020;color:#fff}.wrap{max-width:1000px;margin:auto;padding:24px}nav{display:flex;justify-content:space-between;align-items:center}.logo{font-weight:800;font-size:22px}.hero{min-height:80vh;display:grid;place-items:center;text-align:center}.hero h1{font-size:clamp(42px,8vw,82px);margin:0;background:linear-gradient(90deg,#60a5fa,#a78bfa);-webkit-background-clip:text;color:transparent}.hero p{color:#b8c1d9;font-size:20px;max-width:650px;margin:20px auto}.btn{display:inline-block;padding:13px 22px;border-radius:999px;background:#fff;color:#111827;text-decoration:none;font-weight:700}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:30px 0 70px}.card{background:#151c31;border:1px solid #26304b;padding:24px;border-radius:18px}.card p{color:#aab5cf;line-height:1.6}footer{text-align:center;color:#77839f;padding:30px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav><div class="logo">Demo.</div><div>Portfolio Website</div></nav>
+    <main class="hero">
+      <div>
+        <h1>Hello, World.</h1>
+        <p>A clean responsive demo page built with plain HTML and CSS and published in this GitHub repository.</p>
+        <a class="btn" href="#features">Explore Demo</a>
+      </div>
+    </main>
+    <section id="features" class="cards">
+      <div class="card"><h2>Fast</h2><p>No framework or build step required. Open the file and it works.</p></div>
+      <div class="card"><h2>Responsive</h2><p>The layout adapts smoothly across desktop, tablet, and mobile screens.</p></div>
+      <div class="card"><h2>Simple</h2><p>Everything is contained in one easy-to-edit HTML file.</p></div>
+    </section>
+    <footer>Demo website • GitHub</footer>
+  </div>
+</body>
+</html>
